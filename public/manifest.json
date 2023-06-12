@@ -6,7 +6,6 @@
   "orientation": "portrait",
   "theme_color": "#20232a",
   "background_color":"#282c34",
-  "lang": "pt-br",
   "start_url": ".",
   "icons": [
     {

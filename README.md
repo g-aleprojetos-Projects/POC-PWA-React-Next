@@ -1,33 +1,89 @@
-<style>
-    blue{color:#2D77B4;font-weight:700;}
-    bold{font-weight:700;}
-</style>
+<h1> POC React Next.js pwa </h1>
 
-## Configuração do `manifest.json`
+</br>
+<div align="center">
+    <img src="./document/img/pwa.png" alt="Imagem de um celular usando um app feito em pwa" title="pwa" width="400" /></br>
+</div>
 
-* <blue>name</blue> - exibido na tela inicial abaixo do ícone do aplicativo
-* <blue>short_name</blue> - exibido abaixo do atalho na área de trabalho ou na tela inicial
-* <blue>description</blue> - uma descrição geral da aplicação
-* <blue>display</blue> - especifica o modo de exibição. Aqui estão os diferentes modos disponíveis classificados por ordem de fallback:
-    * <bold>fullscreen</bold>: toda a área de exibição disponível é usada e nenhuma interface de usuário do navegador é mostrada.
-    * <bold>standalone</bold>: olhe e sinta-se como um aplicativo independente. Isso significa que o aplicativo terá sua própria janela, seu próprio ícone no ativador e assim por diante. Nesse modo, o agente do usuário excluirá elementos da interface do usuário para controlar a navegação, mas poderá incluir outros elementos da interface do usuário, como uma barra de status.
-    * <bold>minimal-ui</bold>: o aplicativo será parecido com um aplicativo independente, mas terá um conjunto mínimo de elementos de interface do usuário para controlar a navegação. Esses elementos variam de acordo com o navegador e o sistema.
-    * <bold>browser (default)</bold>: o aplicativo é aberto em uma guia do navegador convencional ou em uma nova janela, dependendo do navegador e da plataforma.
-* <blue>orientation</blue> - define a orientação padrão para dispositivos móveis: any, natural,landscape, portrait...
-* <blue>theme_color</blue> - a cor do tema geral do aplicativo, usada nas barras de status, por exemplo, se forem exibidas
-* <blue>background_color</blue> - a cor de fundo da tela inicial
-* <blue>lang</blue> - o idioma principal do aplicativo.
-* <blue>start_url</blue> - a URL que é carregada primeiro quando você abre o aplicativo a partir do atalho
-* <blue>manifest_version</blue> - Esta chave especifica a versão de manifest.json usada por esta extensão.
-* <blue>version</blue> - A string de versão para a extensão.
-* <blue>icons</blue> - A `icons` chave especifica ícones para sua extensão. Esses ícones serão usados ​​para representar a extensão em componentes como o Gerenciador de complementos. Consiste em pares chave-valor de tamanho de imagem em px e caminho de imagem relativo ao diretório raiz da extensão.
+</br>
 
+<h3 align="center">
+    <a href="https://g-aleprojetos-projects.github.io/poc-pwa-react-next">🔗 https://g-aleprojetos-projects.github.io/poc-pwa-react-next</a>
+</h3>
+</br>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ <p>Apresento um aplicativo desenvolvido com React e Next.js, utilizando a biblioteca next-pwa para transformá-lo em um Progressive Web App (PWA). O aplicativo foi hospedado no GitHub Pages, permitindo fácil acesso e disponibilidade.</p></br>
 
-## Getting Started
+<p>Combinando a robustez do Next.js, incluindo suas capacidades de renderização do lado do servidor (SSR) e de pré-renderização, juntamente com a funcionalidade PWA fornecida pela biblioteca next-pwa, o aplicativo proporciona uma experiência ágil e responsiva aos usuários.</p></br>
 
-First, run the development server:
+<p>A interface intuitiva e amigável do aplicativo oferece recursos impressionantes, sendo adequado para diversos propósitos, como e-commerce, redes sociais, produtividade, entre outros. A integração das tecnologias React, Next.js, next-pwa e a hospedagem no GitHub Pages garante desempenho excepcional e uma experiência de usuário de alta qualidade.</p>
+</br>
+</br>
+
+<h2>O que é  PWA</h2>
+
+<p>PWA é a sigla para Progressive Web App, que traduzido para o português significa "Aplicativo Web Progressivo". Um PWA é uma abordagem para o desenvolvimento de aplicativos web que combina características de sites e aplicativos móveis, oferecendo uma experiência semelhante à de um aplicativo nativo.</p>
+</br>
+
+<h2>Por que usar o PWA</h2>
+
+<p>Existem várias razões para usar PWA, mas resumidamente, as principais vantagens são:</p>
+</br>
+<ol>
+    <li>Acessibilidade direta via URL, sem a necessidade de baixar e instalar pela loja de aplicativos.</li>
+    <li>Funciona em diferentes dispositivos e plataformas.</li>
+    <li>Funciona offline ou em condições de conectividade limitada.</li>
+    <li>Atualizações automáticas para manter os usuários sempre na versão mais recente.</li>
+    <li>Recursos avançados, como notificações push, para maior engajamento do usuário.</li>
+    <li>Desenvolvimento ágil com tecnologias web padrão.</li>
+</ol>
+
+<h2> Qual a vanagem de contruir um pwa com react nest.js</h2>
+
+<p>Essas são as principais vantagens resumidas de construir um PWA com React e Next.js. Essas tecnologias combinadas oferecem eficiência, desempenho e suporte a recursos avançados de PWA.</p>
+</br>
+<ol>
+    <li>Desenvolvimento eficiente com Next.js.</li>
+    <li>Componentização e reutilização de código com React.</li>
+    <li>Melhor desempenho com renderização do lado do servidor.</li>
+    <li>Otimização para mecanismos de busca (SEO) com Next.js.</li>
+    <li>Integração fácil com recursos de PWA usando next-pwa.</li>
+    <li>Suporte da comunidade e ecossistema robusto.</li>
+</ol>
+
+<h2> Qual a vantagem de usar tudo isso no githube pages?</h2>
+
+<p>Essas são as principais vantagens resumidas de usar essa combinação no GitHub Pages. Isso proporciona uma hospedagem gratuita e fácil de usar, com recursos de controle de versão e colaboração, tornando-o uma opção conveniente para hospedar seu aplicativo React Next.js PWA.</p>
+</br>
+<ol>
+    <li>Hospedagem gratuita no GitHub Pages.</li>
+    <li>Implantação simplificada.</li>
+    <li>Acesso global para os usuários.</li>
+    <li>Plataforma confiável e escalável.</li>
+    <li>Controle de versão e colaboração facilitados.</li>
+</ol>
+</br>
+<h2>Setup do projeto</h2>
+
+Criação do projeto
+
+```bash
+npx create-next-app@latest
+
+```
+<h2> configura o projeto</h2>
+
+```bash
+What is your project named? poc-pwa-react-next
+Would you like to use TypeScript with this project? No / [Yes]
+Would you like to use ESLint with this project? No / [Yes]
+Would you like to use Tailwind CSS with this project? No / [Yes]
+Would you like to use `src/` directory with this project? No / [Yes]
+Use App Router (recommended)? No / [Yes]
+Would you like to customize the default import alias? [No] / Yes
+```
+
+<h2>Execute o servidor de desenvolvimento</h2>
 
 ```bash
 npm run dev
@@ -36,24 +92,182 @@ yarn dev
 # or
 pnpm dev
 ```
+ 
+<h3>Abra <a href="http://localhost:3000">🔗 http://localhost:3000</a> com seu navegador para ver o resultado.</h3>
+</br>
+<h2>Preparação do projeto para o github pages</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>Na pasta <code>next.config.js</code> acrescente o <code>output: 'export'</code> no <code>nextConfig</code> como solicitado na documentação <a href="https://nextjs.org/docs/app/building-your-application/deploying/static-exports">🔗 nextjs/static-exports</a></p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: 'export',
+  // Optional: Add a trailing slash to all paths `/about` -> `/about/`
+  // trailingSlash: true,
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
+}
+ 
+module.exports = nextConfig
+```
+<p>Acrescente pontos no endereço das imagens, pois o githube pages não encontra se tiver apenas /</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<h3>Exemplo </h3>
 
-## Learn More
+```
+ <Image
+      className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+      src="./next.svg" //Aqui foi acrecentado o ponto na frente da barra
+      alt="Next.js Logo"
+      width={180}
+      height={37}
+      priority
+    />
+```
 
-To learn more about Next.js, take a look at the following resources:
+<h2>Crie um repositório no gitHub e suba o projeto</h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<h3>navegue até a guia de configurações desse repositório.</h3>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<img src="./document//img/setting.jpeg" alt="Mostra a pasta setting do github" title="setting" width="500" />
+</br>
+</br>
 
-## Deploy on Vercel
+<h3>Clique em Pages na barra lateral esquerda</h3>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="./document//img/pages.jpeg" alt="Mostra a barra lateral onde deve clicar" title="barra lateral" width="500" />
+</br>
+</br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h3>Em Deploy for a branch, escolha GitHub Actions</h3>
+
+<img src="./document//img/actions.jpeg" alt="Mostra onde clicar para acionar o GitHub Actions" title="GitHub Actions" width="500" />
+</br>
+</br>
+
+<h3>Isso irá sugerir alguns fluxos de trabalho para você com base no código em seu repositório. Você pode escolher o fluxo de trabalho compatível com sua base de código.</h3>
+
+<img src="./document//img/build.jpeg" alt="Para escolher o fluxo de trabalho" title="fluxo de trabalho" width="500" />
+</br>
+</br>
+
+<h3>Clicar em configurar levará você a um fluxo de trabalho pré-criado. Sinta-se à vontade para revisar o YAML, ajustá-lo de acordo com sua preferência e confirmar o código.</h3>
+
+<img src="./document//img/yaml.png" alt="Cria o YAML e mostra botão para confirmar" title="confirma o yaml criado" width="500" />
+</br>
+</br>
+
+
+<h3>Em alguns segundos, sua ação começará a ser executada. Ele gerará um URL e implantará seu site estático no GitHub Pages se for bem-sucedido.</h3>
+
+<img src="./document//img/url.png" alt="Mostra fazendo o deploy" title="deploy" width="600" />
+</br>
+</br>
+
+<h3>Dirija-se ao seu URL nomeado <code>yourusername.github.io/your_repo_name</code> para verificar o seu site está pronto!</h3>
+
+<img src="./document//img/finalizacao.jpeg" alt="Mostra a url" title="url" width="500" />
+</br>
+</br>
+
+<h2>Criar o PWA</h2>
+
+<h3>baixar a biblioteca <a href="https://www.npmjs.com/package/next-pwa">🔗 next-pwa</a></h3>
+
+<h2>Configurar a página <code>layout.tsx</code> substituindo o metadata.</h2>
+
+```
+const APP_NAME = "next-pwa example";
+const APP_DESCRIPTION = "This is an example of using next-pwa plugin";
+
+export const metadata: Metadata = {
+  title: "POC PWA React Next",
+  description: APP_DESCRIPTION,
+  applicationName: APP_NAME,
+  appleWebApp: {
+    capable: true,
+    title: APP_NAME,
+    statusBarStyle: "default",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  viewport:
+    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
+  manifest: "./manifest.json",
+  icons: [
+    { rel: "apple-touch-icon", url: "./icons/apple-touch-icon.png" },
+    { rel: "shortcut icon", url: "./favicon.ico" },
+  ],
+  keywords: ["nextjs", "pwa", "next-pwa"],
+};
+```
+
+<h2>Criar o <code>manifest.json</code> na pasta <code>public</code></h2>
+
+```
+{
+  "name": "POC React next pwa",
+  "short_name": "App",
+  "description": "Apresento um aplicativo desenvolvido com React e Next.js, utilizando a biblioteca next-pwa para transformá-lo em um Progressive Web App (PWA). O aplicativo foi hospedado no GitHub Pages, permitindo fácil acesso e disponibilidade.",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#20232a",
+  "background_color":"#282c34",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "./icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "manifest_version": 1,
+  "version": "0.1"
+}
+```
+<h3>Descrição</h3>
+<ul>
+    <li><strong>name</strong> - exibido na tela inicial abaixo do ícone do aplicativo</li>
+    <li><strong>short_name</strong> - exibido abaixo do atalho na área de trabalho ou na tela inicial</li>
+    <li><strong>description</strong> - uma descrição geral da aplicação</li>
+    <li><strong>display</strong> - especifica o modo de exibição. Aqui estão os diferentes modos disponíveis classificados por ordem de fallback:</li>
+    <ul>
+        <li><strong>fullscreen</strong>: toda a área de exibição disponível é usada e nenhuma interface de usuário do navegador é mostrada.</li>
+        <li><strong>standalone</strong>: olhe e sinta-se como um aplicativo independente. Isso significa que o aplicativo terá sua própria janela, seu próprio ícone no ativador e assim por diante. Nesse modo, o agente do usuário excluirá elementos da interface do usuário para controlar a navegação, mas poderá incluir outros elementos da interface do usuário, como uma barra de status.</li>
+        <li><strong>minimal-ui</strong>: o aplicativo será parecido com um aplicativo independente, mas terá um conjunto mínimo de elementos de interface do usuário para controlar a navegação. Esses elementos variam de acordo com o navegador e o sistema.</li>
+        <li><strong>browser (default)</strong>: o aplicativo é aberto em uma guia do navegador convencional ou em uma nova janela, dependendo do navegador e da plataforma.</li>
+    </ul>
+    <li><strong>orientation</strong> - define a orientação padrão para dispositivos móveis: any, natural,landscape, portrait...</li>
+    <li><strong>theme_color</strong> - a cor do tema geral do aplicativo, usada nas barras de status, por exemplo, se forem exibidas</li>
+    <li><strong>background_color</strong> - a cor de fundo da tela inicial</li>
+    <li><strong>start_url</strong> - a URL que é carregada primeiro quando você abre o aplicativo a partir do atalho</li>
+    <li><strong>icons</strong> - A `icons` chave especifica ícones para sua extensão. Esses ícones serão usados ​​para representar a extensão em componentes como o Gerenciador de complementos. Consiste em pares chave-valor de tamanho de imagem em px e caminho de imagem relativo ao diretório raiz da extensão.</li>
+    <li><strong>manifest_version</strong> - Esta chave especifica a versão de manifest.json usada por esta extensão.</li>
+    <li><strong>version</strong> - A string de versão para a extensão.</li>
+</ul>
+</br>
+</br>
+
+<h3>Colocar as imagens na pasta <code>public/icons</code></h3>
+
+<img src="./document//img/imagenspwa.png" alt="Mostra a pasta onde fica os icones" title="icones" width="300" />
+</br>
+</br>
+
+<h2>Agora é só subir o projeto para o github</h2>
+</br>
+</br>
+
+<h2>Fontes</h2>
+<a href="https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0">🔗 How to host a Hugo or Next.js site on GitHub Pages</a></p>
+<a href="https://youtu.be/WoL3xbkAfOU">🔗 How to host next js app on GitHub pages using GitHub Actions | CI/CD</a></p>
