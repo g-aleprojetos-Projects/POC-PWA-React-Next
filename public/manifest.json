@@ -1,13 +1,13 @@
 {
   "name": "POC React next pwa",
   "short_name": "App",
+  "description": "Apresento um aplicativo desenvolvido com React e Next.js, utilizando a biblioteca next-pwa para transformá-lo em um Progressive Web App (PWA). O aplicativo foi hospedado no GitHub Pages, permitindo fácil acesso e disponibilidade.",
   "display": "fullscreen",
   "orientation": "portrait",
+  "theme_color": "#20232a",
+  "background_color":"#282c34",
   "lang": "pt-br",
   "start_url": ".",
-  "splash_pages": null,
-  "author": "Alexandre Gonçalves",
-  "manifest_version": 1.1,
   "icons": [
     {
       "src": "./icons/android-chrome-192x192.png",
@@ -20,5 +20,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "manifest_version": 1,
+  "version": "0.1"
 }
