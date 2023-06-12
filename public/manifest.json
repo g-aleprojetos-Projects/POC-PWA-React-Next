@@ -4,7 +4,6 @@
   "display": "fullscreen",
   "orientation": "portrait",
   "lang": "pt-br",
-  "scope" : "poc-pwa-react-next/",
   "start_url": "poc-pwa-react-next/",
   "splash_pages": null,
   "icons": [
