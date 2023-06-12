@@ -4,7 +4,7 @@
   "display": "fullscreen",
   "orientation": "portrait",
   "lang": "pt-br",
-  "start_url": "poc-pwa-react-next/",
+  "start_url": ".",
   "splash_pages": null,
   "author": "Alexandre Gonçalves",
   "manifest_version": 1.1,
