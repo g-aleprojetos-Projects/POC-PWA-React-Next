@@ -3,7 +3,7 @@
   "short_name": "App",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/",
+  "start_url": "poc-pwa-react-next/",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
