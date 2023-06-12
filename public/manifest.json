@@ -3,7 +3,7 @@
   "short_name": "App",
   "display": "fullscreen",
   "orientation": "portrait",
-  "start_url": "poc-pwa-react-next/",
+  "start_url": "/",
   "splash_pages": null,
   "icons": [
     {
