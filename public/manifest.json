@@ -1,9 +1,10 @@
 {
   "name": "POC React next pwa",
   "short_name": "App",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "start_url": "poc-pwa-react-next/",
+  "splash_pages": null,
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

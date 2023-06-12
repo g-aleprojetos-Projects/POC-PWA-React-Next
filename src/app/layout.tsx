@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   viewport:
     "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
-  manifest: "/manifest.json",
+  manifest: "./manifest.json",
   icons: [
     { rel: "apple-touch-icon", url: "/icons/apple-touch-icon.png" },
     { rel: "shortcut icon", url: "/favicon.ico" },
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>{children}</body>
     </html>
   )
