@@ -195,7 +195,7 @@ module.exports = nextConfig
 
 ## Criar o PWA
 
-<h3>baixar a biblioteca <a href="https://www.npmjs.com/package/next-pwa">🔗 next-pwa</a></h3>
+<h3>Baixar a biblioteca <a href="https://www.npmjs.com/package/next-pwa">🔗 next-pwa</a></h3>
 
 <h3> Configurar a página <code>layout.tsx</code> substituindo o metadata.</h3>
 
@@ -226,7 +226,7 @@ export const metadata: Metadata = {
 };
 ```
 
-<h3> Criar o `manifest.json` na pasta `public`</h3>
+<h3> Criar o <code>manifest.json</code> na pasta <code>public</code></h3>
 
 ```
 {
