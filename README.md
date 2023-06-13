@@ -2,7 +2,7 @@
 
 </br>
 <div align="center">
-    <img src="./document/img/pwa.png" alt="Imagem de um celular usando um app feito em pwa" title="pwa" width="400" /></br>
+    <img src="./public/img/pwa.png" alt="Imagem de um celular usando um app feito em pwa" title="pwa" width="400" /></br>
 </div>
 
 </br>
@@ -22,30 +22,21 @@
 
 ## Índice
 
-- [O que é PWA](#o-que---pwa)
+- [O que é PWA](#o-que-é-pwa)
 - [Por que usar o PWA](#por-que-usar-o-pwa)
 - [Qual a vanagem de contruir um pwa com react nest.js](#qual-a-vanagem-de-contruir-um-pwa-com-react-nestjs)
-- [Qual a vantagem de usar tudo isso no githube pages?](#qual-a-vantagem-de-usar-tudo-isso-no-githube-pages-)
+- [Qual a vantagem de usar tudo isso no github pages?](#qual-a-vantagem-de-usar-tudo-isso-no-github-pages-)
 - [Setup do projeto](#setup-do-projeto)
-  * [Criação do projeto](#cria--o-do-projeto)
+  * [Criação do projeto](#criação-do-projeto)
   * [Configura o projeto](#configura-o-projeto)
   * [Execute o servidor de desenvolvimento](#execute-o-servidor-de-desenvolvimento)
-- [Preparação do projeto para o github pages](#prepara--o-do-projeto-para-o-github-pages)
-- [Crie um repositório no gitHub e suba o projeto](#crie-um-reposit-rio-no-github-e-suba-o-projeto)
-  * [navegue até a guia de configurações desse repositório.](#navegue-at--a-guia-de-configura--es-desse-reposit-rio)
-  * [Clique em Pages na barra lateral esquerda](#clique-em-pages-na-barra-lateral-esquerda)
-  * [Em Deploy for a branch, escolha GitHub Actions](#em-deploy-for-a-branch--escolha-github-actions)
-  * [Isso irá sugerir alguns fluxos de trabalho para você com base no código em seu repositório. Você pode escolher o fluxo de trabalho compatível com sua base de código.](#isso-ir--sugerir-alguns-fluxos-de-trabalho-para-voc--com-base-no-c-digo-em-seu-reposit-rio-voc--pode-escolher-o-fluxo-de-trabalho-compat-vel-com-sua-base-de-c-digo)
-  * [Clicar em configurar levará você a um fluxo de trabalho pré-criado. Sinta-se à vontade para revisar o YAML, ajustá-lo de acordo com sua preferência e confirmar o código.](#clicar-em-configurar-levar--voc--a-um-fluxo-de-trabalho-pr--criado-sinta-se---vontade-para-revisar-o-yaml--ajust--lo-de-acordo-com-sua-prefer-ncia-e-confirmar-o-c-digo)
-  * [Em alguns segundos, sua ação começará a ser executada. Ele gerará um URL e implantará seu site estático no GitHub Pages se for bem-sucedido.](#em-alguns-segundos--sua-a--o-come-ar--a-ser-executada-ele-gerar--um-url-e-implantar--seu-site-est-tico-no-github-pages-se-for-bem-sucedido)
-  * [Dirija-se ao seu URL nomeado <code>yourusername.github.io/your_repo_name</code> para verificar o seu site está pronto!](#dirija-se-ao-seu-url-nomeado--code-yourusernamegithubio-your-repo-name--code--para-verificar-o-seu-site-est--pronto-)
+- [Preparação do projeto para o github pages](#preparação-do-projeto-para-o-github-pages)
+- [Crie um repositório no gitHub e suba o projeto](#crie-um-repositório-no-github-e-suba-o-projeto)
 - [Criar o PWA](#criar-o-pwa)
-  * [Configurar a página <code>layout.tsx</code> substituindo o metadata.](#configurar-a-p-gina--code-layouttsx--code--substituindo-o-metadata)
-  * [Criar o `manifest.json` na pasta `public`](#criar-o--manifestjson--na-pasta--public)
-  * [Colocar as imagens na pasta `public/icons`](#colocar-as-imagens-na-pasta--public-icons)
 - [Fontes](#fontes)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## O que é PWA
 
@@ -78,7 +69,7 @@
     <li>Suporte da comunidade e ecossistema robusto.</li>
 </ol>
 
-## Qual a vantagem de usar tudo isso no githube pages?
+## Qual a vantagem de usar tudo isso no github pages?
 
 <p>Essas são as principais vantagens resumidas de usar essa combinação no GitHub Pages. Isso proporciona uma hospedagem gratuita e fácil de usar, com recursos de controle de versão e colaboração, tornando-o uma opção conveniente para hospedar seu aplicativo React Next.js PWA.</p>
 </br>
@@ -159,46 +150,46 @@ module.exports = nextConfig
 
 ## Crie um repositório no gitHub e suba o projeto
 
-### navegue até a guia de configurações desse repositório.
+<h3> navegue até a guia de configurações desse repositório.</h3>
 
-<img src="./document//img/setting.jpeg" alt="Mostra a pasta setting do github" title="setting" width="500" />
+<img src="./public/img/setting.jpeg" alt="Mostra a pasta setting do github" title="setting" width="500" />
 </br>
 </br>
 
-### Clique em Pages na barra lateral esquerda
+<h3> Clique em Pages na barra lateral esquerda</h3>
 
-<img src="./document//img/pages.jpeg" alt="Mostra a barra lateral onde deve clicar" title="barra lateral" width="500" />
+<img src="./public/img/pages.jpeg" alt="Mostra a barra lateral onde deve clicar" title="barra lateral" width="500" />
 </br>
 </br>
 
-### Em Deploy for a branch, escolha GitHub Actions
+<h3> Em Deploy for a branch, escolha GitHub Actions</h3>
 
-<img src="./document//img/actions.jpeg" alt="Mostra onde clicar para acionar o GitHub Actions" title="GitHub Actions" width="500" />
+<img src="./public/img/actions.jpeg" alt="Mostra onde clicar para acionar o GitHub Actions" title="GitHub Actions" width="500" />
 </br>
 </br>
 
-### Isso irá sugerir alguns fluxos de trabalho para você com base no código em seu repositório. Você pode escolher o fluxo de trabalho compatível com sua base de código.
+<h3> Isso irá sugerir alguns fluxos de trabalho para você com base no código em seu repositório. Você pode escolher o fluxo de trabalho compatível com sua base de código.</h3>
 
-<img src="./document//img/build.jpeg" alt="Para escolher o fluxo de trabalho" title="fluxo de trabalho" width="500" />
+<img src="./public/img/build.jpeg" alt="Para escolher o fluxo de trabalho" title="fluxo de trabalho" width="500" />
 </br>
 </br>
 
-### Clicar em configurar levará você a um fluxo de trabalho pré-criado. Sinta-se à vontade para revisar o YAML, ajustá-lo de acordo com sua preferência e confirmar o código.
+<h3> Clicar em configurar levará você a um fluxo de trabalho pré-criado. Sinta-se à vontade para revisar o YAML, ajustá-lo de acordo com sua preferência e confirmar o código.</h3>
 
-<img src="./document//img/yaml.png" alt="Cria o YAML e mostra botão para confirmar" title="confirma o yaml criado" width="500" />
+<img src="./public/img/yaml.png" alt="Cria o YAML e mostra botão para confirmar" title="confirma o yaml criado" width="500" />
 </br>
 </br>
 
 
-### Em alguns segundos, sua ação começará a ser executada. Ele gerará um URL e implantará seu site estático no GitHub Pages se for bem-sucedido.
+<h3> Em alguns segundos, sua ação começará a ser executada. Ele gerará um URL e implantará seu site estático no GitHub Pages se for bem-sucedido.</h3>
 
-<img src="./document//img/url.png" alt="Mostra fazendo o deploy" title="deploy" width="600" />
+<img src="./public/img/url.png" alt="Mostra fazendo o deploy" title="deploy" width="600" />
 </br>
 </br>
 
-### Dirija-se ao seu URL nomeado <code>yourusername.github.io/your_repo_name</code> para verificar o seu site está pronto!
+<h3> Dirija-se ao seu URL nomeado <code>yourusername.github.io/your_repo_name</code> para verificar o seu site está pronto!</h3>
 
-<img src="./document//img/finalizacao.jpeg" alt="Mostra a url" title="url" width="500" />
+<img src="./public/img/finalizacao.jpeg" alt="Mostra a url" title="url" width="500" />
 </br>
 </br>
 
@@ -206,7 +197,7 @@ module.exports = nextConfig
 
 <h3>baixar a biblioteca <a href="https://www.npmjs.com/package/next-pwa">🔗 next-pwa</a></h3>
 
-### Configurar a página <code>layout.tsx</code> substituindo o metadata.
+<h3> Configurar a página <code>layout.tsx</code> substituindo o metadata.</h3>
 
 ```
 const APP_NAME = "next-pwa example";
@@ -235,7 +226,7 @@ export const metadata: Metadata = {
 };
 ```
 
-### Criar o `manifest.json` na pasta `public`
+<h3> Criar o `manifest.json` na pasta `public`</h3>
 
 ```
 {
@@ -287,9 +278,9 @@ export const metadata: Metadata = {
 </br>
 </br>
 
-### Colocar as imagens na pasta `public/icons`
+<h3> Colocar as imagens na pasta `public/icons`</h3>
 
-<img src="./document//img/imagenspwa.png" alt="Mostra a pasta onde fica os icones" title="icones" width="300" />
+<img src="./public/img/imagenspwa.png" alt="Mostra a pasta onde fica os icones" title="icones" width="300" />
 </br>
 </br>
 
@@ -299,5 +290,5 @@ export const metadata: Metadata = {
 
 ## Fontes
 
-<a href="https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0">🔗 How to host a Hugo or Next.js site on GitHub Pages</a></p>
-<a href="https://youtu.be/WoL3xbkAfOU">🔗 How to host next js app on GitHub pages using GitHub Actions | CI/CD</a></p>
+<p><a href="https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0">🔗 How to host a Hugo or Next.js site on GitHub Pages</a></p>
+<p><a href="https://youtu.be/WoL3xbkAfOU">🔗 How to host next js app on GitHub pages using GitHub Actions | CI/CD</a></p>
