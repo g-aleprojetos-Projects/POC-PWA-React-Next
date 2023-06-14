@@ -24,7 +24,7 @@
 
 - [O que é PWA](#o-que-é-pwa)
 - [Por que usar o PWA](#por-que-usar-o-pwa)
-- [Qual a vanagem de contruir um pwa com react nest.js](#qual-a-vanagem-de-contruir-um-pwa-com-react-nestjs)
+- [Qual a vanagem de contruir um pwa com react next.js](#qual-a-vanagem-de-contruir-um-pwa-com-react-nextjs)
 - [Qual a vantagem de usar tudo isso no github pages?](#qual-a-vantagem-de-usar-tudo-isso-no-github-pages-)
 - [Setup do projeto](#setup-do-projeto)
   * [Criação do projeto](#criação-do-projeto)
@@ -56,7 +56,7 @@
     <li>Desenvolvimento ágil com tecnologias web padrão.</li>
 </ol>
 
-## Qual a vanagem de contruir um pwa com react nest.js
+## Qual a vanagem de contruir um pwa com react next.js
 
 <p>Essas são as principais vantagens resumidas de construir um PWA com React e Next.js. Essas tecnologias combinadas oferecem eficiência, desempenho e suporte a recursos avançados de PWA.</p>
 </br>

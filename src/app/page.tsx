@@ -48,7 +48,7 @@ export default function Home() {
           </a>
         </li >
         <li className="text-blue-500">
-          <a href="#qual-a-vantagem-de-contruir-um-pwa-com-react-nestjs" >
+          <a href="#qual-a-vantagem-de-contruir-um-pwa-com-react-nextjs" >
             Qual a vantagem de construir um PWA com React Next.js
           </a>
         </li>
@@ -111,7 +111,7 @@ export default function Home() {
           mais recente do aplicativo.
         </li>
       </ul>
-      <h3 id="qual-a-vantagem-de-contruir-um-pwa-com-react-nestjs" className="text-2xl font-bold mt-8 text-gray-100">
+      <h3 id="qual-a-vantagem-de-contruir-um-pwa-com-react-nextjs" className="text-2xl font-bold mt-8 text-gray-100">
         Qual a vantagem de construir um PWA com React Next.js
       </h3>
       <p className="mt-4 text-neutral-400">
