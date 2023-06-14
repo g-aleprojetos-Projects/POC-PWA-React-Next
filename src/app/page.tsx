@@ -171,20 +171,20 @@ export default function Home() {
         Configura o projeto
       </h3>
       <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
-        <code className="text-sm font-bold text-white ">
+        <code className="text-sm font-bold text-white pr-4">
           <p>What is your project named? <span className='text-neutral-400'>poc-pwa-react-next</span></p>
-          <p>Would you like to use <span className="text-blue-400">TypeScript</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
-          <p>Would you like to use <span className="text-blue-400">ESLint</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
-          <p>Would you like to use <span className="text-blue-400">Tailwind CSS</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
-          <p>Would you like to use <span className="text-blue-400">`src/` directory</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
-          <p>Use <span className="text-blue-400">App Router</span> (recommended)? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
-          <p>Would you like to customize the default <span className="text-blue-400">import alias</span>? <span className='underline text-green-300'>No</span> / <span className='text-neutral-400'>Yes</span></p>
+          <p>Would you like to use <span className="text-blue-400">TypeScript</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span> </p>
+          <p>Would you like to use <span className="text-blue-400">ESLint</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span> </p>
+          <p>Would you like to use <span className="text-blue-400">Tailwind CSS</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span> </p>
+          <p>Would you like to use <span className="text-blue-400">`src/` directory</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span> </p>
+          <p>Use <span className="text-blue-400">App Router</span> (recommended)? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes </span> </p>
+          <p>Would you like to customize the default <span className="text-blue-400">import alias</span>? <span className='underline text-green-300'>No</span> / <span className='text-neutral-400'>Yes</span> </p>
         </code>
       </pre>
       <h3 className="mt-4 text-neutral-400">
         Execute o servidor de desenvolvimento
       </h3>
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto scroll-ps-6 ">
         <code className="text-sm text-gray-100">
           <p>npm run dev </p>
           <p className='text-green-300'># or </p>
@@ -210,7 +210,7 @@ export default function Home() {
       className="text-blue-500 underline">
          🔗 nextjs/static-exports
         </a></p>
-        <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+        <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto scroll-ps-6 ">
           <code className="text-sm text-gray-100">
              <p> {"/**"}</p>
              <p> {"* @type {import('next').NextConfig}"} </p>
@@ -230,7 +230,7 @@ export default function Home() {
       <p className="mt-4 text-neutral-400">Acrescente pontos no endereço das imagens, pois o githube pages não encontra se tiver apenas /.</p>
 
      <h3 className="mt-4 text-neutral-400">Exemplo </h3>
-     <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+     <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto scroll-ps-6 ">
         <code className="text-sm text-gray-100">
          <p>{" <Image"}</p>
          <p>{`    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"`}</p>
@@ -333,7 +333,7 @@ export default function Home() {
 
       <h3 className="mt-4 text-neutral-400"> Configurar a página <code>layout.tsx</code> substituindo o metadata.</h3>
 
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto scroll-ps-6 ">
         <code className="text-sm text-gray-100">
          <p>{` const APP_NAME = "next-pwa example";`}</p>
          <p>{` const APP_DESCRIPTION = "This is an example of using next-pwa plugin";`}</p>
@@ -364,7 +364,7 @@ export default function Home() {
 
       <h3 className="mt-4 text-neutral-400"> Criar o <code>manifest.json</code> na pasta <code>public</code></h3>
 
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto scroll-ps-6 ">
         <code className="text-sm text-gray-100">
           <p>{`   "name": "POC React next pwa",`}</p>
           <p>{`   "short_name": "App",`}</p>
