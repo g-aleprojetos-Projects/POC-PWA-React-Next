@@ -15,10 +15,10 @@ export default function Home() {
       </div>
       <h3 className="text-center mt-4">
         <a
-          href="https://g-aleprojetos-projects.github.io/poc-pwa-react-next"
+          href="https://github.com/g-aleprojetos-Projects/poc-pwa-react-next"
           className="text-blue-500 underline"
         >
-          🔗 https://g-aleprojetos-projects.github.io/poc-pwa-react-next
+          🔗 https://github.com/g-aleprojetos-Projects/poc-pwa-react-next
         </a>
       </h3>
       <p className="mt-8 text-neutral-400">
@@ -162,7 +162,7 @@ export default function Home() {
       <h3 className="mt-4 text-neutral-400">
         Criação do projeto
       </h3>
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
         <code className="text-sm text-gray-100">
           npx create-next-app@latest
         </code>
@@ -170,8 +170,8 @@ export default function Home() {
       <h3 className="mt-4 text-neutral-400">
         Configura o projeto
       </h3>
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
-        <code className="text-sm font-bold text-white">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
+        <code className="text-sm font-bold text-white ">
           <p>What is your project named? <span className='text-neutral-400'>poc-pwa-react-next</span></p>
           <p>Would you like to use <span className="text-blue-400">TypeScript</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
           <p>Would you like to use <span className="text-blue-400">ESLint</span> with this project? <span className='text-neutral-400'>...No</span> / <span className='underline text-green-300'>Yes</span></p>
@@ -184,7 +184,7 @@ export default function Home() {
       <h3 className="mt-4 text-neutral-400">
         Execute o servidor de desenvolvimento
       </h3>
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
         <code className="text-sm text-gray-100">
           <p>npm run dev </p>
           <p className='text-green-300'># or </p>
@@ -210,7 +210,7 @@ export default function Home() {
       className="text-blue-500 underline">
          🔗 nextjs/static-exports
         </a></p>
-        <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+        <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
           <code className="text-sm text-gray-100">
              <p> {"/**"}</p>
              <p> {"* @type {import('next').NextConfig}"} </p>
@@ -230,7 +230,7 @@ export default function Home() {
       <p className="mt-4 text-neutral-400">Acrescente pontos no endereço das imagens, pois o githube pages não encontra se tiver apenas /.</p>
 
      <h3 className="mt-4 text-neutral-400">Exemplo </h3>
-     <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+     <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
         <code className="text-sm text-gray-100">
          <p>{" <Image"}</p>
          <p>{`    className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"`}</p>
@@ -333,7 +333,7 @@ export default function Home() {
 
       <h3 className="mt-4 text-neutral-400"> Configurar a página <code>layout.tsx</code> substituindo o metadata.</h3>
 
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
         <code className="text-sm text-gray-100">
          <p>{` const APP_NAME = "next-pwa example";`}</p>
          <p>{` const APP_DESCRIPTION = "This is an example of using next-pwa plugin";`}</p>
@@ -364,7 +364,7 @@ export default function Home() {
 
       <h3 className="mt-4 text-neutral-400"> Criar o <code>manifest.json</code> na pasta <code>public</code></h3>
 
-      <pre className="bg-slate-800 p-4 mt-4 rounded-xl">
+      <pre className="bg-slate-800 p-4 mt-4 rounded-xl overflow-x-auto">
         <code className="text-sm text-gray-100">
           <p>{`   "name": "POC React next pwa",`}</p>
           <p>{`   "short_name": "App",`}</p>
