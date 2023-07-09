@@ -1,6 +1,13 @@
+'use client';
+import { useEffect } from 'react';
 import Image from 'next/image'
+import * as serviceWorker from '../../serviceWorker'
 
 export default function Home() {
+  useEffect(() => {
+    serviceWorker.unregister();
+  }, []);
+  
   return (
    <main className="container mx-auto px-4 py-8">
      <h1 className="text-4xl font-bold mb-4 text-center mt-6 text-gray-100">POC React Next.js PWA</h1>
@@ -9,8 +16,9 @@ export default function Home() {
           src="./img/pwa.png"
           alt="Imagem de um celular usando um app feito em PWA"
           title="pwa"
+          priority={true}
           width={400}
-          height={300}
+          height={400}
         />
       </div>
       <h3 className="text-center mt-4">
