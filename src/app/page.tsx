@@ -20,9 +20,8 @@ declare global {
 }
 
 export default function Home() {
-  const [prompt, promptToInstall] = useAddToHomescreenPrompt();
-  const [isVisible, setVisibleState] = useState(false);
-
+  const [prompt, promptToInstall, isAppInstalled] = useAddToHomescreenPrompt();
+  const [isVisible, setVisibleState] = useState(isAppInstalled);
   const hide = () => setVisibleState(false);
 
   useEffect(() => {

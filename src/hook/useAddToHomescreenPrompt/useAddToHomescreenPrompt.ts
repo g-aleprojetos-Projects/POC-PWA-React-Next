@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-
+import { useCallback, useEffect, useState } from "react";
 
 interface IBeforeInstallPromptEvent extends Event {
   readonly platforms: string[];
@@ -12,39 +11,51 @@ interface IBeforeInstallPromptEvent extends Event {
 
 export function useAddToHomescreenPrompt(): [
   IBeforeInstallPromptEvent | null,
-  () => void
+  () => void,
+  boolean
 ] {
-  const [prompt, setState] = useState<IBeforeInstallPromptEvent | null>(
-    null
-  );
+  const [prompt, setPrompt] = useState<IBeforeInstallPromptEvent | null>(null);
+  const [isAppInstalled, setIsAppInstalled] = useState(false);
 
-  const promptToInstall = () => {
+  const promptToInstall = useCallback(() => {
     if (prompt) {
-      return prompt.prompt();
+      prompt.prompt();
+    } else {
+      throw new Error('Tried installing before browser sent "beforeinstallprompt" event');
     }
-    return Promise.reject(
-      new Error(
-        'Tried installing before browser sent "beforeinstallprompt" event'
-      )
-    );
-  };
+  }, [prompt]);
 
   useEffect(() => {
     const ready = (e: IBeforeInstallPromptEvent) => {
       e.preventDefault();
-      setState(e);
+      setPrompt(e);
     };
 
     const checkAppInstalled = async () => {
-        if (prompt) {
-          const choiceResult = await prompt.userChoice;
-          if (choiceResult.outcome === "accepted") {
-            console.log("O aplicativo foi instalado pelo usuário");
-          } else {
-            console.log("O usuário optou por não instalar o aplicativo");
-          }
+      if (prompt) {
+        const choiceResult = await prompt.userChoice;
+        if (choiceResult.outcome === "accepted") {
+          console.log("O aplicativo foi instalado pelo usuário");
+          setIsAppInstalled(true);
+          const installStatus = {
+            isInstalled: true
+          };
+          localStorage.setItem("installStatus", JSON.stringify(installStatus));
+        } else {
+          console.log("O usuário optou por não instalar o aplicativo");
         }
-      };
+      } else {
+        const installStatusStr = localStorage.getItem("installStatus");
+        const installStatus = installStatusStr
+          ? JSON.parse(installStatusStr)
+          : null;
+        if (installStatus && installStatus.isInstalled) {
+          console.log("O aplicativo já está instalado");
+          setIsAppInstalled(true);
+          return;
+        }
+      }
+    };
 
     window.addEventListener("beforeinstallprompt", ready as any);
 
@@ -55,5 +66,5 @@ export function useAddToHomescreenPrompt(): [
     };
   }, [prompt]);
 
-  return [prompt, promptToInstall];
+  return [prompt, promptToInstall, isAppInstalled];
 }
