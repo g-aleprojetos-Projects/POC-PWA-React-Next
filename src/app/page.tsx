@@ -27,8 +27,6 @@ export default function Home() {
 
   useEffect(() => {
     serviceWorker.unregister();
-    console.log("plataforma: ", prompt?.platforms)
-    console.log("prompt: ", prompt)
       if (prompt) {
         setVisibleState(true);
       }
@@ -45,7 +43,7 @@ export default function Home() {
     <main className={`w-screen h-screen bg-inherit ${isVisible ?'overflow-hidden':'overflow-auto'}`}>
       {isVisible && (
       <div className='flex justify-center items-center w-screen h-screen bg-slate-950/50 absolute '>
-        <div className='flex flex-col bg-zinc-800 rounded-md p-4'>
+        <div className='flex flex-col bg-zinc-800 rounded-md p-6'>
           <div className='flex justify-center items-start'>
             <div className='flex h-full mr-4'>
             <Image
@@ -57,11 +55,8 @@ export default function Home() {
             />
             </div>
             <div className='flex flex-col gap-y-2 max-w-sm'>
-            <h1 className='text-white'>Instalar POC React Next pwa app</h1>
-            <p className='text-xs text-gray-400'>Fornecedor: g.aleprojetos-projects.github.io</p>
-            <p className={`text-sm text-white mb-4 ${prompt?.platforms?.includes('web') ? 'visible' : 'invisible'}`}>
-              Este site pode ser instalado como um aplicativo. Ele será aberto em sua prórpia janela e integrado com segurança aos recursos do Windows.
-            </p>
+              <h1 className='text-white'>Instalar POC React Next pwa app</h1>
+              <p className='text-xs text-gray-400 mb-4'>Fornecedor: g.aleprojetos-projects.github.io</p>
             </div>
           </div>
         <div className='flex justify-around items-center border-t-2 border-gray-400'>
