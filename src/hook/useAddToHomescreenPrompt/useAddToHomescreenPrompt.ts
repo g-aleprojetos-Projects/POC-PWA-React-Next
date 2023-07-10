@@ -19,7 +19,6 @@ export function useAddToHomescreenPrompt(): [
   );
 
   const promptToInstall = () => {
-    console.log(prompt)
     if (prompt) {
       return prompt.prompt();
     }
@@ -36,12 +35,25 @@ export function useAddToHomescreenPrompt(): [
       setState(e);
     };
 
+    const checkAppInstalled = async () => {
+        if (prompt) {
+          const choiceResult = await prompt.userChoice;
+          if (choiceResult.outcome === "accepted") {
+            console.log("O aplicativo foi instalado pelo usuário");
+          } else {
+            console.log("O usuário optou por não instalar o aplicativo");
+          }
+        }
+      };
+
     window.addEventListener("beforeinstallprompt", ready as any);
+
+    checkAppInstalled();
 
     return () => {
       window.removeEventListener("beforeinstallprompt", ready as any);
     };
-  }, []);
+  }, [prompt]);
 
   return [prompt, promptToInstall];
 }
