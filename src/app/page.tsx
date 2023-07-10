@@ -27,6 +27,8 @@ export default function Home() {
 
   useEffect(() => {
     serviceWorker.unregister();
+    console.log("plataforma: ", prompt?.platforms)
+    console.log("prompt: ", prompt)
       if (prompt) {
         setVisibleState(true);
       }
@@ -56,8 +58,8 @@ export default function Home() {
             </div>
             <div className='flex flex-col gap-y-2 max-w-sm'>
             <h1 className='text-white'>Instalar POC React Next pwa app</h1>
-            <p className='text-xs text-gray-400'>Fornecedor: localhost:3000</p>
-            <p className='text-sm text-white mb-4'>
+            <p className='text-xs text-gray-400'>Fornecedor: g.aleprojetos-projects.github.io</p>
+            <p className={`text-sm text-white mb-4 ${prompt?.platforms?.includes('web') ? 'visible' : 'invisible'}`}>
               Este site pode ser instalado como um aplicativo. Ele será aberto em sua prórpia janela e integrado com segurança aos recursos do Windows.
             </p>
             </div>

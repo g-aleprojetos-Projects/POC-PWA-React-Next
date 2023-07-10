@@ -19,6 +19,7 @@ export function useAddToHomescreenPrompt(): [
   );
 
   const promptToInstall = () => {
+    console.log(prompt)
     if (prompt) {
       return prompt.prompt();
     }
@@ -31,6 +32,7 @@ export function useAddToHomescreenPrompt(): [
 
   useEffect(() => {
     const ready = (e: IBeforeInstallPromptEvent) => {
+        console.log("e: ", e)
       e.preventDefault();
       setState(e);
     };
