@@ -31,7 +31,7 @@ export function useAddToHomescreenPrompt(): [
       setPrompt(e);
     };
 
-    const checkAppInstalled = async () => {
+    const checkAppInstalled = async () => {      
       if (prompt) {
         const choiceResult = await prompt.userChoice;
         if (choiceResult.outcome === "accepted") {
