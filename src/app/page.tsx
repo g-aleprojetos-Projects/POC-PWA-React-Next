@@ -1,15 +1,75 @@
 'use client';
-import { useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image'
 import * as serviceWorker from '../../serviceWorker'
+import { useAddToHomescreenPrompt } from '@/hook/useAddToHomescreenPrompt';
+
+interface BeforeInstallPromptEvent extends Event {
+  readonly platforms: string[];
+  readonly userChoice: Promise<{
+    outcome: "accepted" | "dismissed";
+    platform: string;
+  }>;
+  prompt(): Promise<void>;
+}
+
+declare global {
+  interface WindowEventMap {
+    beforeinstallprompt: BeforeInstallPromptEvent;
+  }
+}
 
 export default function Home() {
+  const [prompt, promptToInstall] = useAddToHomescreenPrompt();
+  const [isVisible, setVisibleState] = useState(false);
+
+  const hide = () => setVisibleState(false);
+
   useEffect(() => {
     serviceWorker.unregister();
-  }, []);
+      if (prompt) {
+        setVisibleState(true);
+      }
+    },
+    [prompt]
+  );
+
+  const handleInstalar = () =>{
+    promptToInstall()
+    setVisibleState(false);
+  }
   
   return (
-   <main className="container mx-auto px-4 py-8">
+    <main className={`w-screen h-screen bg-inherit ${isVisible ?'overflow-hidden':'overflow-auto'}`}>
+      {isVisible && (
+      <div className='flex justify-center items-center w-screen h-screen bg-slate-950/50 absolute '>
+        <div className='flex flex-col bg-zinc-800 rounded-md p-4'>
+          <div className='flex justify-center items-start'>
+            <div className='flex h-full mr-4'>
+            <Image
+              src="./icons/android-chrome-192x192.png"
+              alt="Icone do app"
+              title="icone"
+              width={40}
+              height={40}
+            />
+            </div>
+            <div className='flex flex-col gap-y-2 max-w-sm'>
+            <h1 className='text-white'>Instalar POC React Next pwa app</h1>
+            <p className='text-xs text-gray-400'>Fornecedor: localhost:3000</p>
+            <p className='text-sm text-white mb-4'>
+              Este site pode ser instalado como um aplicativo. Ele será aberto em sua prórpia janela e integrado com segurança aos recursos do Windows.
+            </p>
+            </div>
+          </div>
+        <div className='flex justify-around items-center border-t-2 border-gray-400'>
+          <button className='px-8 py-3 mt-4 bg-green-500 rounded-md' onClick={handleInstalar}>Instalar</button>
+          <button className='px-8 py-3 mt-4 bg-red-500 rounded-md' onClick={hide}>Agora não</button>
+        </div>
+
+        </div>
+      </div>)}
+   <div className="container mx-auto px-4 py-8">    
      <h1 className="text-4xl font-bold mb-4 text-center mt-6 text-gray-100">POC React Next.js PWA</h1>
      <div className="flex justify-center">
         <Image
@@ -452,6 +512,7 @@ export default function Home() {
         🔗 How to host next js app on GitHub pages using GitHub Actions | CI/CD
         </a></h3>
 
-    </main>
+    </div>
+  </main>
   )
 }
