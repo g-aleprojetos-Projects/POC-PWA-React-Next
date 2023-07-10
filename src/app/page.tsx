@@ -37,8 +37,7 @@ export default function Home() {
     promptToInstall()
     setVisibleState(false);
   }
-  console.log('prompt: ', prompt?.platforms)
-
+  
   return (
     <main className={`w-screen h-screen bg-inherit ${isVisible ?'overflow-hidden':'overflow-auto'}`}>
       {isVisible && (
@@ -68,7 +67,6 @@ export default function Home() {
       </div>)}
    <div className="container mx-auto px-4 py-8">    
      <h1 className="text-4xl font-bold mb-4 text-center mt-6 text-gray-100">POC React Next.js PWA</h1>
-     <h1 className="text-4xl font-bold mb-4 text-center mt-6 text-gray-100">{`prompt: ${prompt?.platforms}`}</h1>
      <div className="flex justify-center">
         <Image
           src="./img/pwa.png"
