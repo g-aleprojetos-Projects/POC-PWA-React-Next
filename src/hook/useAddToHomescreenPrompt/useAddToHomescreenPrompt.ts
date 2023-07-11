@@ -14,6 +14,7 @@ export function useAddToHomescreenPrompt(): [
   () => void,
   boolean
 ] {
+  const CACHE_NAME = 'my-cache-v1';
   const [prompt, setPrompt] = useState<IBeforeInstallPromptEvent | null>(null);
   const [isAppInstalled, setIsAppInstalled] = useState(false);
 
@@ -40,20 +41,34 @@ export function useAddToHomescreenPrompt(): [
           const installStatus = {
             isInstalled: true
           };
-          localStorage.setItem("installStatus", JSON.stringify(installStatus));
+
+          caches.open(CACHE_NAME)
+          .then(cache => cache.put('installStatus', new Response(JSON.stringify(installStatus))))
+          .catch((error) =>console.log('Error: ', error) )
         } else {
           console.log("O usuário optou por não instalar o aplicativo");
         }
-      } else {
-        const installStatusStr = localStorage.getItem("installStatus");
-        const installStatus = installStatusStr
-          ? JSON.parse(installStatusStr)
-          : null;
-        if (installStatus && installStatus.isInstalled) {
-          console.log("O aplicativo já está instalado");
-          setIsAppInstalled(true);
-          return;
-        }
+      } else {       
+        try {
+          const cache = await caches.open(CACHE_NAME);
+          const response = await cache.match('installStatus');
+        
+          if (response) {
+            const installStatusStr = await response.text();
+            const installStatus = JSON.parse(installStatusStr);
+            
+            if (installStatus && installStatus.isInstalled) {
+              console.log("O aplicativo já está instalado");
+              setIsAppInstalled(true);
+              return;
+            }
+          } else {
+            throw new Error('O item "installStatus" não foi encontrado no cache.');
+          }
+        } catch (error) {
+          console.log('Erro: ', error);
+          return null;
+        } 
       }
     };
 
